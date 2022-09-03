@@ -1,0 +1,241 @@
+/* 変数 */
+:root {
+/* 色 */
+--white: #ffffff;
+}
+/* サイズの基準： 1rem = 100px */
+:root {
+font-size: 100px;
+}
+
+@media (min-width: 768px) {
+:root {
+font-size: 7.32vw;
+}
+}
+
+/* テキストの基本設定 */
+body {
+color: var( --darkgray );
+font-size: 0.16rem;
+font-family: sans-serif;
+line-height: 1.8;
+}
+
+/* リセット / ノーマライズ / サニタイズ */
+body, h1, h2, h3, h4, h5, h6, p, ul, figure {
+margin: 0;
+padding: 0;
+display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+a {
+color: inherit;
+}
+
+a:hover {
+opacity: 0.8;
+}
+
+body {
+overflow-y: scroll;
+background-color: rgb(218, 227, 240);
+}
+
+
+/* ヘッダー ------------------------------------------------------------------*/
+.header {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+display: block;
+justify-content: space-between;
+text-align: center;
+width: 100%;
+height: auto;
+box-sizing: border-box;
+padding-top: 1vw;
+padding-left: var(--side);
+padding-right: var(--side);
+background-color: rgba(30, 30, 30, 0.6);
+}
+
+/* ヘッダー:バー */
+.header-bar{
+    display: flex;
+    width:100vw;
+}
+.menu{
+    margin-left: auto;
+    margin-right: 0px;
+    padding-right: 2vw;
+}
+
+/* ヘッダー:ナビ */
+.header .nav{
+    display: inline-block;
+    text-align: center;
+}
+.header .nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    color :azure;
+}
+.header .nav li{
+    padding-right: 5vw;
+    padding-left: 5vw;
+    display: inline-block;
+}
+.header .nav li a{
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ヘッダー：サイト名 */
+.site-img {
+width: 2.25rem;
+}
+@media (min-width: 768px) {
+.site-img {
+width: 4.26rem;
+}
+}
+
+/* ヒーローイメージ */
+.hero {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    margin-bottom: 20px;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* コンテンツ一般  ---------------------------------------------------------------*/
+.contents {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 780px){
+    .contents{
+        display: block;
+    }  
+}
+.contents h2 {
+    border-bottom: 1px #7a2104 solid;
+}
+
+/* サイドバー */
+aside{
+    margin-left: 0.6rem;
+    margin-right: 0;
+    text-align: center;
+}
+aside figure{
+    width:300px;
+    height:150px;
+}
+@media screen and (max-width: 780px) {
+    aside{
+        margin: auto;
+        margin-top: 30px;
+    }
+    aside figure{
+        height: auto;
+        width: auto;
+    }
+}
+
+aside h2{
+    margin-bottom: 10px;
+}
+aside a {
+    text-decoration: none;
+}
+aside li{
+    list-style: none;
+}
+/* ランキング */
+
+aside .ranking article{
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
+
+
+/* フッター  ----------------------------------------------------------------------------*/
+.footer {
+    margin-top: 10vw;
+    margin: auto;
+    color: #ffffff;
+    background-color: #414141;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+}
+@media screen and (max-width: 780px) {
+    .footer {
+        display: block;
+    }
+}
+.footer h2{
+    border-bottom: 1px #ffffff solid;
+    margin-bottom: 2vw;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer li{
+    list-style: none;
+}
+
+/*フッター info */
+.info{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.info figure img{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+.info .sns{
+    margin: auto;
+    margin-top: 5vw;
+}
+.info .sns ul{
+    display: flex;
+    justify-content: center;
+}
+.info .sns li{
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+/*フッター アーカイブ */
+.achievements{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+/*フッター policy */
+.policy{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+}
+.policy li{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}

@@ -1,0 +1,36 @@
+/* メインコンテンツ */
+main {
+    margin-right: 0.2rem;
+    text-align: center;
+    width: 60%;
+}
+
+@media screen and (max-width: 780px) {
+    main {
+        width: auto;
+        margin: auto;
+    }
+}
+main section {
+    margin-top: 10px;
+}
+
+main article {
+    background-color: #ffffff;
+    padding-bottom: 5px;
+    margin: auto;
+}
+
+main article .excerpt {
+    width: 70%;
+    color: #888888;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+main article a {
+    margin: 3px;
+    text-decoration: none;
+    padding: 3px 10px 5px 10px;
+    border: 1px rgb(122, 122, 122) solid;
+}

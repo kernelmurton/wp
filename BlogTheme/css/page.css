@@ -1,0 +1,17 @@
+main {
+    margin-right: 0.2rem;
+    width: 60%;
+}
+
+@media screen and (max-width: 780px) {
+    main {
+        width: auto;
+        margin: auto;
+    }
+}
+main h1{
+    margin-bottom: 2vw;
+}
+main h2{
+    margin-top: 5vw;
+}
